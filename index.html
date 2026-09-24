@@ -82,11 +82,11 @@
 
         #chest {
             position: absolute;
-            bottom: 30px;
+            bottom: 90px; /* ПОДНЯЛ СУНДУК ВЫШЕ (было 30px) */
             left: 50%;
             transform: translateX(-50%);
-            width: 90px;
-            height: 80px;
+            width: 110px; /* УВЕЛИЧИЛ СУНДУК (было 90px) */
+            height: 98px; /* УВЕЛИЧИЛ ВЫСОТУ (было 80px) */
             z-index: 20;
             will-change: transform, left;
         }
@@ -570,7 +570,7 @@
         
         // Physics
         let chestX = window.innerWidth / 2;
-        const chestWidth = 90;
+        const chestWidth = 110; // УВЕЛИЧИЛ ЗОНУ СТОЛКНОВЕНИЯ ДО 110 (было 90)
 
         // Init
         const rect = gameArea.getBoundingClientRect();
